@@ -9,7 +9,7 @@
       >
       </el-option>
     </el-select>
-    <el-select clearable :disabled="!province" placeholder="请选择城市" v-model="city">
+    <el-select class="city-select" clearable :disabled="!province" placeholder="请选择城市" v-model="city">
       <el-option
         v-for="item in selectCity"
         :key="item.code"
@@ -99,5 +99,7 @@ watch(() => area.value, val => {
 </script>
 
 <style lang="scss" scoped>
-
+.city-select {
+  margin: 0 10px;
+}
 </style>
