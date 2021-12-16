@@ -21,8 +21,8 @@
 
 <script lang="ts" setup>
 let props = defineProps<{
-  collapse: boolean
-}>()
+  collapse: boolean;
+}>();
 </script>
 
 <style lang="scss" scoped>
