@@ -1,10 +1,12 @@
 import { App } from 'vue';
 import ChooseArea from './chooseArea';
 import ChooseIcon from './chooseIcon';
+import Trend from './trend';
 
 const components = [
   ChooseArea,
-  ChooseIcon
+  ChooseIcon,
+  Trend
 ]
 
 export default {
