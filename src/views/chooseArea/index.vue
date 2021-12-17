@@ -1,5 +1,5 @@
 <template>
-  <choose-area @change="changeArea"></choose-area>
+  <zl-choose-area @change="changeArea"></zl-choose-area>
 </template>
 
 <script lang="ts" setup>

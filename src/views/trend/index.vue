@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="flex">
-      <trend text="营业额" type="down" downIcon="SortDown"></trend>
-      <trend text="销售额" upIcon="SortUp"></trend>
+      <zl-trend text="营业额" type="down" downIcon="SortDown"></zl-trend>
+      <zl-trend text="销售额" upIcon="SortUp"></zl-trend>
     </div>
   </div>
 </template>

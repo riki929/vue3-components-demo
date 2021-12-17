@@ -1,10 +1,10 @@
 <template>
   <div>
-    <notification :value="50">
+    <zl-notification :value="50">
       <template #default>
-        <pop-list :list="list" :actions="actions"></pop-list>
+        <zl-pop-list :list="list" :actions="actions"></zl-pop-list>
       </template>
-    </notification>
+    </zl-notification>
     <!-- <br />
     <br />
     <notification :value="50" :max="30"></notification>
