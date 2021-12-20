@@ -6,6 +6,8 @@ import Notification from './notification';
 import PopList from './popList';
 import Menu from './menu';
 import Progress from './progress';
+import ChooseTime from './chooseTime';
+import ChooseDate from './chooseDate';
 
 const components = [
   ChooseArea,
@@ -14,7 +16,9 @@ const components = [
   Notification,
   PopList,
   Menu,
-  Progress
+  Progress,
+  ChooseTime,
+  ChooseDate
 ]
 
 export default {
