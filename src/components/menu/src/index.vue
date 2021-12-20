@@ -1,47 +1,48 @@
 <template>
   <el-menu
+    class="el-menu-vertical-demo"
     :default-active="defaultActive"
     :router="router"
     v-bind="$attrs"
   >
     <template
-      v-for="(item, index) in data"
-      :key="index"
+      v-for="(item, i) in data"
+      :key="i"
     >
       <el-menu-item 
-        v-if="!item.children || !item.children"
-        :index="item.index"
+        v-if="!item[children] || !item[children]"
+        :index="item[index]"
       >
         <component
-          v-if="item.icon"
-          :is="`el-icon-${camelToKebab(item.icon)}`"
+          v-if="item[icon]"
+          :is="`el-icon-${camelToKebab(item[icon])}`"
         >
         </component>
-        <span>{{ item.name }}</span>
+        <span>{{ item[name] }}</span>
       </el-menu-item>
       <el-sub-menu
-        v-if="item.children && item.children.length"
-        :index="item.index"
+        v-if="item[children] && item[children].length"
+        :index="item[index]"
       >
         <template #title>
           <component
-            v-if="item.icon"
-            :is="`el-icon-${camelToKebab(item.icon)}`"
+            v-if="item[icon]"
+            :is="`el-icon-${camelToKebab(item[icon])}`"
           >
           </component>
-          <span>{{ item.name }}</span>
+          <span>{{ item[name] }}</span>
         </template>
         <el-menu-item
-          v-for="(subItem, subIndex) in item.children"
+          v-for="(subItem, subIndex) in item[children]"
           :key="subIndex"
-          :index="subItem.index"
+          :index="subItem[index]"
         >
           <component
-            v-if="subItem.icon"
-            :is="`el-icon-${camelToKebab(subItem.icon)}`"
+            v-if="subItem[icon]"
+            :is="`el-icon-${camelToKebab(subItem[icon])}`"
           >
           </component>
-          <span>{{ subItem.name }}</span>
+          <span>{{ subItem[name] }}</span>
         </el-menu-item>
       </el-sub-menu>
     </template>
@@ -50,13 +51,12 @@
 
 <script lang="ts" setup>
 import { PropType } from 'vue';
-import { MenuItem } from './types';
 import { camelToKebab } from '../../../utils/index'
 
 let props = defineProps({
   // 导航菜单的数据
   data: {
-    type: Array as PropType<MenuItem[]>,
+    type: Array as PropType<any[]>,
     required: true
   },
   // 默认选中的菜单
@@ -68,6 +68,27 @@ let props = defineProps({
   router: {
     type: Boolean,
     default: false
+  },
+  // 键名
+  // 菜单标题的键名
+  name: {
+    type: String,
+    default: 'name'
+  },
+  // 菜单标识的键名
+  index: {
+    type: String,
+    default: 'index'
+  },
+  // 菜单图标的键名
+  icon: {
+    type: String,
+    default: 'icon'
+  },
+  // 菜单子菜单的键名
+  children: {
+    type: String,
+    default: 'children'
   }
 })
 </script>
@@ -75,5 +96,8 @@ let props = defineProps({
 <style lang="scss" scoped>
 svg {
   margin-right: 4px;
+}
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
 }
 </style>
