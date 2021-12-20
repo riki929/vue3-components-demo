@@ -5,6 +5,7 @@ import Trend from './trend';
 import Notification from './notification';
 import PopList from './popList';
 import Menu from './menu';
+import Progress from './progress';
 
 const components = [
   ChooseArea,
@@ -12,7 +13,8 @@ const components = [
   Trend,
   Notification,
   PopList,
-  Menu
+  Menu,
+  Progress
 ]
 
 export default {

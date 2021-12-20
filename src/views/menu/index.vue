@@ -1,6 +1,6 @@
 <template>
   <div style="width: 200px;">
-    <!-- <zl-menu
+    <zl-menu
       :data="data1"
       defaultActive="1"
       name="a"
@@ -8,15 +8,15 @@
       icon="c"
       children="d"
     >
-    </zl-menu> -->
-    <zl-menu-infinite
+    </zl-menu>
+    <!-- <zl-menu-infinite
       :data="data2"
       name="a"
       index="b"
       icon="c"
       children="d"
     >
-    </zl-menu-infinite>
+    </zl-menu-infinite> -->
   </div>
 </template>
 
