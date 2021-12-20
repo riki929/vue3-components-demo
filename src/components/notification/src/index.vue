@@ -45,4 +45,9 @@ let props = defineProps({
 .noti-icon {
   cursor: pointer;
 }
+
+svg {
+  width: 1.25em;
+  height: 1.25em;
+}
 </style>

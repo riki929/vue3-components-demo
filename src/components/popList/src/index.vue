@@ -124,4 +124,9 @@ let clickAction = (action: ActionsOptions, index: number) => {
 .border {
   border-right: 1px solid #eee;
 }
+
+svg {
+  width: 1em;
+  height: 1em;
+}
 </style>
