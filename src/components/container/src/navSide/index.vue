@@ -70,6 +70,11 @@ let data = [
     index: '/form'
   },
   {
+    icon: 'ChatLineSquare',
+    name: '弹框表单',
+    index: '/modalForm'
+  },
+  {
     icon: 'Grid',
     name: '表格',
     index: '/table'

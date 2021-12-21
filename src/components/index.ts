@@ -9,6 +9,8 @@ import Progress from './progress';
 import ChooseTime from './chooseTime';
 import ChooseDate from './chooseDate';
 import ChooseCity from './chooseCity';
+import Form from './form';
+import ModalForm from './modalForm';
 
 const components = [
   ChooseArea,
@@ -20,7 +22,9 @@ const components = [
   Progress,
   ChooseTime,
   ChooseDate,
-  ChooseCity
+  ChooseCity,
+  Form,
+  ModalForm
 ]
 
 export default {
