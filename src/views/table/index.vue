@@ -25,7 +25,7 @@
     <template #name="{ scope }">
       <el-popover effect="light" trigger="hover" placement="top">
         <template #default>
-          <div style="padding: 8px;">
+          <div>
             <p>姓名: {{ scope.row.name }}</p>
             <p>住址: {{ scope.row.address }}</p>
           </div>

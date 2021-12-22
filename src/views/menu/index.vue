@@ -1,6 +1,7 @@
 <template>
-  <div style="width: 200px;">
+  <div class="menu">
     <zl-menu
+      class="menu1"
       :data="data1"
       defaultActive="1"
       name="a"
@@ -9,14 +10,15 @@
       children="d"
     >
     </zl-menu>
-    <!-- <zl-menu-infinite
+    <zl-menu-infinite
+      class="menu2"
       :data="data2"
       name="a"
       index="b"
       icon="c"
       children="d"
     >
-    </zl-menu-infinite> -->
+    </zl-menu-infinite>
   </div>
 </template>
 
@@ -114,5 +116,15 @@ let data2 = [
 </script>
 
 <style lang="scss" scoped>
-
+.menu {
+  width: 560px;
+  display: flex;
+  .menu1 {
+    width: 200px;
+    margin-right: 100px;
+  }
+  .menu2 {
+    width: 260px;
+  }
+}
 </style>

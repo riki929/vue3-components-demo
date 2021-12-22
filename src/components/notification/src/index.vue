@@ -1,5 +1,6 @@
 <template>
   <el-popover
+    popper-class="notification-popper-class"
     placement="bottom"
     :width="300"
     trigger="click"
