@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:components": "node ./command/build.js",
+    "lib": "npm run build:components"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^0.2.4",
@@ -23,6 +25,7 @@
     "@vitejs/plugin-vue": "^2.0.0",
     "@vitejs/plugin-vue-jsx": "^1.3.2",
     "axios": "^0.24.0",
+    "fs-extra": "^10.0.0",
     "mockjs": "^1.1.0",
     "sass": "^1.45.0",
     "sass-loader": "^12.4.0",
