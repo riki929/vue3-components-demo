@@ -22,12 +22,12 @@ let data = [
   {
     icon: 'PictureRounded',
     name: '图标选择器',
-    index: '/chooseIcon'
+    index: '/iconPicker'
   },
   {
     icon: 'Location',
     name: '省市区选择',
-    index: '/chooseArea'
+    index: '/areaPicker'
   },
   {
     icon: 'DataLine',
@@ -37,7 +37,7 @@ let data = [
   {
     icon: 'AlarmClock',
     name: '时间选择',
-    index: '/chooseTime'
+    index: '/timePicker'
   },
   {
     icon: 'Notification',
@@ -47,7 +47,7 @@ let data = [
   {
     icon: 'AddLocation',
     name: '城市选择',
-    index: '/chooseCity'
+    index: '/cityPicker'
   },
   {
     icon: 'TurnOff',

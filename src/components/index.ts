@@ -1,30 +1,30 @@
 import { App } from 'vue';
-import ChooseArea from './chooseArea';
-import ChooseIcon from './chooseIcon';
+import AreaPicker from './areaPicker';
+import IconPicker from './iconPicker';
 import Trend from './trend';
 import Notification from './notification';
 import PopList from './popList';
 import Menu from './menu';
 import Progress from './progress';
-import ChooseTime from './chooseTime';
-import ChooseDate from './chooseDate';
-import ChooseCity from './chooseCity';
+import TimePicker from './timePicker';
+import DatePicker from './datePicker';
+import CityPicker from './cityPicker';
 import Form from './form';
 import ModalForm from './modalForm';
 import Table from './table';
 import Calendar from './calendar';
 
 const components = [
-  ChooseArea,
-  ChooseIcon,
+  AreaPicker,
+  IconPicker,
   Trend,
   Notification,
   PopList,
   Menu,
   Progress,
-  ChooseTime,
-  ChooseDate,
-  ChooseCity,
+  TimePicker,
+  DatePicker,
+  CityPicker,
   Form,
   ModalForm,
   Table,

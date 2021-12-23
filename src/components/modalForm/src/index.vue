@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'choose-icon-dialog-body-height': isScroll}">
+  <div :class="{'icon-picker-dialog-body-height': isScroll}">
     <el-dialog
       v-model="dialogVisible"
       v-bind="$attrs"

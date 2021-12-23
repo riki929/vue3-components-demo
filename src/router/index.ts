@@ -12,12 +12,12 @@ const routes: RouteRecordRaw[] = [
         component: Home,
       },
       {
-        path: "/chooseIcon",
-        component: () => import("../views/chooseIcon/index.vue"),
+        path: "/iconPicker",
+        component: () => import("../views/iconPicker/index.vue"),
       },
       {
-        path: "/chooseArea",
-        component: () => import("../views/chooseArea/index.vue"),
+        path: "/areaPicker",
+        component: () => import("../views/areaPicker/index.vue"),
       },
       {
         path: "/trend",
@@ -36,12 +36,12 @@ const routes: RouteRecordRaw[] = [
         component: () => import("../views/progress/index.vue"),
       },
       {
-        path: "/chooseTime",
-        component: () => import("../views/chooseTime/index.vue"),
+        path: "/timePicker",
+        component: () => import("../views/timePicker/index.vue"),
       },
       {
-        path: "/chooseCity",
-        component: () => import("../views/chooseCity/index.vue"),
+        path: "/cityPicker",
+        component: () => import("../views/cityPicker/index.vue"),
       },
       {
         path: "/form",
